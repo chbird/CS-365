@@ -1,0 +1,110 @@
+// CS 365
+// Lab-1 test suite
+
+// TC-1
+// Tests Requirements R3, R4
+// short form command name, exisiting student
+// expected output: HAVIR, BOBBIE, 2, 108, HAMER, GAVIN
+
+S: HAVIR
+
+// TC-2
+// Tests Requirements R3, R4
+// short form command name, non-exisiting student
+// expected output: no such student exists
+
+S: Hamir
+
+// TC-3
+// Tests Requirements R3, R6
+// short form command name, exisiting Teacher
+// expected output: LIBRANDI, TODD
+// HAVIR, BOBBIE
+// SARAO, DIEDRA
+// VANCOTT, MIKE
+// WICINSKY, TERESE
+// KOZOLA, BUSTER
+// MULLINGS, LEIGHANN
+// BUSSMANN, BILLY
+// BERBES, DICK
+// MULGREW, RANDELL
+// TOWLEY, LANE
+
+T: HAMER
+
+// TC-4
+// Tests Requirements R3, R6
+// short form command name, non-exisiting Teacher
+// expected output: no such student exists
+
+Teacher: Hamir
+
+// TC-5
+// Tests Requirements R3, R7
+// short form command name, no students in grade
+// expected output: No such student exists
+
+G: 5 H
+
+// TC-6
+// Tests Requirements R3, R7, R9
+// short form command name, existing students in grade, sorted high
+// expected output: CORKER, CARTER, 3.12, HANTZ, JED, 53
+// RAPOSE, ALONZO, 3.12, HANTZ, JED, 51
+
+G: 4 H
+
+// TC-7
+// Tests Requirements R3, R5
+// short form command name, existing student w/ bus route
+// expected output: HAVIR, BOBBIE, 0
+
+Student: HAVIR B
+
+// TC-8
+// Tests Requirements R3, R8
+// short form command name, existing bus route
+// expected output: SCHOENECKER, PHUONG, 6, 109
+// FINCHMAN, MATHILDA, 6, 111
+// BRODERSEN, HYE, 3, 110
+// HAVIR, BOBBIE, 2, 108
+// MASSART, ELDON, 4, 105
+// GARTH, JOHN, 1, 103
+// CREMEANS, RANDOLPH, 6, 109
+// KREESE, CARRIE, 6, 109
+
+B: 0
+
+// TC-9
+// Tests Requirements R3, R8
+// short form command name, non-existing bus route
+// expected output: no such student exists
+
+B: 1
+
+// TC-10
+// Tests Requirements R3, R11
+// short form command name, display number of students in each grade
+// expected output:6: 21
+// 5: 0
+// 4: 15
+// 3: 9
+// 2: 13
+// 1: 2
+// 0: 0
+
+I
+
+// TC-11
+// Tests Requirements R3, R10
+// short form command name, display the average GPA in a grade
+// expected output: 6, 2.9771428
+
+A: 6
+
+// TC-12
+// Tests Requirements R3, R12
+// short form command name, quit command
+// expected output: program terminatates
+
+Q
